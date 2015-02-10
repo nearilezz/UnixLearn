@@ -17,22 +17,22 @@ BOOL Learn_GetFl(int fd)
 	int val = 0;
 	if ((val = fcntl(fd, F_GETFL, 0)) < 0)
 	{
-		printf("Fcntl GETFL fail!\n");
+		Log_MSG("Fcntl GETFL fail!\n");
 		return false;
 	}
 
 	switch (val & O_ACCMODE){
 		case O_RDONLY:
-			printf("Read only");
+			Log_MSG("Read only");
 			break;
 		case O_WRONLY:
-			printf("Write only");
+			Log_MSG("Write only");
 			break;
 		case O_RDWR:
-			printf("Read and Write");
+			Log_MSG("Read and Write");
 			break;
 		default:
-			printf("error code");
+			Log_MSG("error code");
 	}
 
 	if (val & O_APPEND){
