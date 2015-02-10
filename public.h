@@ -15,7 +15,7 @@ typedef unsigned long long U64;
 typedef enum { false, true } BOOL;
 
 #define OK 0
-#define ERR 1
+
 
 #define Log_MSG(fmt, arg ...)\
     printf("%-20s\t", __FUNCTION__);\

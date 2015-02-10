@@ -9,7 +9,7 @@ U32 Learn_Main()
 	Learn_GetFl(1);
 	Learn_GetFl(2);
 	Learn_GetFl(fd);
-	return 0;
+	return OK;
 }
 
 BOOL Learn_GetFl(int fd)
