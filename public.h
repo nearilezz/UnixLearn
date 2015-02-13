@@ -16,9 +16,8 @@ typedef enum { false, true } BOOL;
 
 #define OK 0
 
-
 #define Log_MSG(fmt, arg ...)\
-    printf("%-20s\t", __FUNCTION__);\
+    printf("[%-20s]\t", __FUNCTION__);\
     printf(fmt, ##arg);
 
 #endif
